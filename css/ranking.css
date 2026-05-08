@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0f172a;
+    color: #e5e7eb;
+}
+
+/* HEADER (somente do ranking, sem dependência externa) */
+
+
+header{
+    width: 100%;
+    padding: 20px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+header h1{
+    font-size: 2rem;
+    letter-spacing: 3px;
+    color: #38bdf8;
+}
+
+/* MENU */
+
+nav ul{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+
+    font-weight: bold;
+
+    padding: 8px 14px;
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+/* HOVER */
+
+nav a:hover{
+    color: #38bdf8;
+    background: rgba(56,189,248,0.15);
+}
+
+/* ABA ATIVA (QUADRADO INDICANDO PÁGINA ATUAL) */
+
+nav a.active{
+    color: #38bdf8;
+
+    background: rgba(56,189,248,0.25);
+
+    border: 1px solid rgba(56,189,248,0.4);
+
+    box-shadow: 0 0 15px rgba(56,189,248,0.2);
+}
+
+/* LAYOUT */
+
+.page-container{
+    width: 100%;
+    min-height: calc(100vh - 70px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+}
+
+.screen-box{
+    width: 100%;
+    max-width: 800px;
+
+    background: #111827;
+
+    border: 1px solid #1f2937;
+
+    border-radius: 16px;
+
+    padding: 40px;
+
+    text-align: center;
+}
+
+h2{
+    font-size: 2rem;
+    color: #38bdf8;
+
+    margin-bottom: 15px;
+}
+
+.desc{
+    color: #9ca3af;
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+}
+
+.score-box{
+    background: #0f172a;
+
+    border: 1px solid #1f2937;
+
+    border-radius: 12px;
+
+    padding: 30px;
+}
+
+.score-box h3{
+    color: #9ca3af;
+
+    font-size: 1rem;
+
+    margin-bottom: 10px;
+}
+
+.score{
+    font-size: 4rem;
+
+    font-weight: bold;
+
+    color: #38bdf8;
+}

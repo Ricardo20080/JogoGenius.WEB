@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genius Game</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>JOGO GENIUS</h1>
+
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html">Início</a></li>
+                <li><a href="telas/ranking.html">Ranking</a></li>
+                <li><a href="telas/sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="container">
+
+        <!-- JOGO -->
+        <section class="game-area">
+
+            <h2>Jogo Genius</h2>
+
+            <div class="genius-board">
+
+                <div class="color green" data-color="green"></div>
+                <div class="color red" data-color="red"></div>
+                <div class="color yellow" data-color="yellow"></div>
+                <div class="color blue" data-color="blue"></div>
+
+            </div>
+
+            <button id="start-btn">Iniciar Jogo</button>
+
+        </section>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="card">
+                <h3>Placar</h3>
+                <p>Rodada: <span id="round">0</span></p>
+                <p>Pontos: <span id="score">0</span></p>
+            </div>
+
+            <div class="card">
+                <h3>Mensagem</h3>
+                <p id="message">Clique em iniciar para começar!</p>
+            </div>
+
+            <div class="card">
+                <h3>Como Jogar</h3>
+
+                <ul>
+                    <li>Clique em iniciar.</li>
+                    <li>Observe a sequência.</li>
+                    <li>Repita corretamente.</li>
+                    <li>A sequência aumenta a cada rodada.</li>
+                    <li>Se errar, o jogo reinicia.</li>
+                </ul>
+
+            </div>
+
+        </aside>
+
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

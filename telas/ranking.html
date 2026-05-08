@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ranking | Genius</title>
+
+    
+    <link rel="stylesheet" href="../css/ranking.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>GENIUS</h1>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a class="active" href="ranking.html">Ranking</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="page-container">
+
+        <div class="screen-box">
+
+            <h2>🏆 Ranking</h2>
+
+            <p class="desc">
+                Maior pontuação registrada no jogo Genius.
+                Tente bater esse recorde jogando o máximo de rodadas possível.
+            </p>
+
+            <div class="score-box">
+
+                <h3>Recorde atual</h3>
+
+                <div class="score" id="record">
+                    0
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script>
+
+        const record = localStorage.getItem("record") || 0;
+
+        document.querySelector("#record").innerHTML = record;
+
+    </script>
+
+</body>
+</html>
